@@ -5,7 +5,7 @@
 When running locally:
 
 ```text
-http://localhost:3000
+http://localhost:8000
 ```
 
 The server uses port `3000` by default, unless a different `PORT` is provided in the environment variables.
@@ -27,7 +27,7 @@ After logging in, you receive a token:
 For protected endpoints, send the token in the request header:
 
 ```http
-Authorization: Bearer YOUR_JWT_TOKEN
+Authorization:  YOUR_JWT_TOKEN
 ```
 
 ---
@@ -143,7 +143,7 @@ GET /user
 Required.
 
 ```http
-Authorization: Bearer YOUR_JWT_TOKEN
+Authorization:  YOUR_JWT_TOKEN
 ```
 
 ---
@@ -325,7 +325,7 @@ POST /
 Required.
 
 ```http
-Authorization: Bearer YOUR_JWT_TOKEN
+Authorization:  YOUR_JWT_TOKEN
 ```
 
 ### Body
@@ -465,7 +465,7 @@ POST /64f123abc456/comments
 Required.
 
 ```http
-Authorization: Bearer YOUR_JWT_TOKEN
+Authorization:  YOUR_JWT_TOKEN
 ```
 
 ### Body
@@ -561,7 +561,7 @@ POST /64f123abc456/likes
 Required.
 
 ```http
-Authorization: Bearer YOUR_JWT_TOKEN
+Authorization:  YOUR_JWT_TOKEN
 ```
 
 ### Body
@@ -664,7 +664,7 @@ Copy the returned JWT token.
 ### 3. Send the token with protected requests
 
 ```http
-Authorization: Bearer YOUR_JWT_TOKEN
+Authorization:  YOUR_JWT_TOKEN
 ```
 
 ### 4. Create a post
@@ -704,14 +704,14 @@ Content-Type: application/json
 For protected endpoints:
 
 ```http
-Authorization: Bearer YOUR_JWT_TOKEN
+Authorization:  YOUR_JWT_TOKEN
 ```
 
 Example:
 
 ```http
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
+Authorization:  eyJhbGciOiJIUzI1NiIs...
 ```
 
 ---

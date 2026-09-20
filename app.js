@@ -15,7 +15,7 @@ const authRoute = require('./src/routes/authRoute');
 //authentication middleware
 require("./src/middleware/auth");
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || '0.0.0.0'
 const HOST = process.env.HOST || 'localhost'
 
 
