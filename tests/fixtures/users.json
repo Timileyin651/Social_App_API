@@ -1,0 +1,23 @@
+const validUsers = [
+  {
+    first_name: 'Ada',
+    last_name: 'Lovelace',
+    username: 'ada_lovelace',
+    email: 'ada@example.com',
+    password: 'Passw0rd!23',
+  },
+  {
+    first_name: 'Grace',
+    last_name: 'Hopper',
+    username: 'grace_hopper',
+    email: 'grace@example.com',
+    password: 'Passw0rd!23',
+  },
+  {
+    first_name: 'Alan',
+    last_name: 'Turing',
+    username: 'alan_turing',
+    email: 'alan@example.com',
+    password: 'Passw0rd!23',
+  },
+];
