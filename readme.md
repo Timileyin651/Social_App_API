@@ -723,7 +723,7 @@ Authorization:  eyJhbGciOiJIUzI1NiIs...
 - Validation middleware is used on several endpoints.
 - Authentication is handled with Passport.
 - Global error handling is configured in the application.
-- The default server address is `http://localhost:3000`.
+- The default server address is `http://localhost:8000`.
 - Protected routes require a valid JWT.
 - Posts can be accessed without authentication for listing and viewing.
 - Comments and likes are nested resources belonging to a post.
