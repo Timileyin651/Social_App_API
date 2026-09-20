@@ -1,16 +1,5 @@
 # API Documentation
 
-## Base URL
-
-When running locally:
-
-```text
-http://localhost:8000
-```
-
-The server uses port `3000` by default, unless a different `PORT` is provided in the environment variables.
-
----
 
 ## Authentication
 
@@ -723,7 +712,6 @@ Authorization:  eyJhbGciOiJIUzI1NiIs...
 - Validation middleware is used on several endpoints.
 - Authentication is handled with Passport.
 - Global error handling is configured in the application.
-- The default server address is `http://localhost:8000`.
 - Protected routes require a valid JWT.
 - Posts can be accessed without authentication for listing and viewing.
 - Comments and likes are nested resources belonging to a post.
