@@ -7,7 +7,7 @@ const commentRouter = express.Router({mergeParams: true})
 
 commentRouter.post('/', validate(comment.create), commentController.createComment);
 commentRouter.get('/', commentController.listComment);
-commentRouter.delete('/:id', validate(comment.create), commentController.deleteComment)
+commentRouter.delete('/:id', validate(idParam, 'params'), commentController.deleteComment)
 
 module.exports = commentRouter
 

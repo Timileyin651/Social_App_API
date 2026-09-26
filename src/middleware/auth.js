@@ -75,7 +75,7 @@ passport.use('login',
                     return done(null, false, {message: 'Wrong Password'})
                 }
 
-                return done(null, user, {mesaage: 'Logged in successfully'})
+                return done(null, user, {message: 'Logged in successfully'})
             } catch (error) {
                 return done(error);
                 

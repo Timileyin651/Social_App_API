@@ -715,3 +715,5 @@ Authorization:  eyJhbGciOiJIUzI1NiIs...
 - Protected routes require a valid JWT.
 - Posts can be accessed without authentication for listing and viewing.
 - Comments and likes are nested resources belonging to a post.
+- was having issues with the testing so i did an over-ride by installing a version of mongo as seen in the package.json
+- Find a particular word and exclude which directory ypu don't want the file to search grep -rn "app.listen" . --exclude-dir=node_modules

@@ -12,7 +12,7 @@ require('../middleware/auth')
 postRouter.post('/', passport.authenticate('jwt', {session: false}),validate(post.create), postController.create);
 postRouter.get('/', postController.list);
 postRouter.get('/:id',validate(idParam, 'params'), postController.getPost);
-postRouter.put('/id',passport.authenticate('jwt', {session: false}),validate(idParam, 'params'),validate(post.update),postController.updatePost);
+postRouter.put('/:id',passport.authenticate('jwt', {session: false}),validate(idParam, 'params'),validate(post.update),postController.updatePost);
 postRouter.put('/:id/publish',passport.authenticate('jwt', {session: false}),validate(idParam, 'params'), postController.publishPost);
 postRouter.delete('/:id',passport.authenticate('jwt', {session: false}),validate(idParam, 'params'), postController.removePost);
 

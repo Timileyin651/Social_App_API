@@ -12,7 +12,7 @@ authRouter.post('/signup', (req,res,next) => {
             return next(error)
         }
         if(!user){
-            res.status(409).json({
+            return res.status(409).json({
                 success:false,
                 message: info?.message || 'Signup failed'
             });

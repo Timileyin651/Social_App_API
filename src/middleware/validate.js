@@ -5,7 +5,7 @@ function validate(schema, property='body'){
             stripUnknown: true, //drop field the schema does not need
         });
         if(error){
-            const message = error.details.map((d)=> d.messageb).join(', ');
+            const message = error.details.map((d)=> d.message).join(', ');
             return res.status(422).json({success:false, message})
         }
 

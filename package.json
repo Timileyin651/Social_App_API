@@ -1,17 +1,28 @@
 {
   "name": "social-app-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "The API uses **JWT authentication**.",
+  "homepage": "https://github.com/Timileyin651/Social_App_API#readme",
+  "bugs": {
+    "url": "https://github.com/Timileyin651/Social_App_API/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Timileyin651/Social_App_API.git"
+  },
   "license": "ISC",
-  "author": "victor otunuga",
+  "author": "",
   "type": "commonjs",
   "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
   "scripts": {
-    "start": "node app.js"
+    "test": "jest --detectOpenHandles"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
-    "dotenv": "^17.4.2",
+    "dotenv": "^18.0.3",
     "express": "^5.2.1",
     "joi": "^18.2.9",
     "jsonwebtoken": "^9.0.3",
@@ -23,7 +34,14 @@
   },
   "devDependencies": {
     "jest": "^30.5.2",
+    "mongodb-memory-server": "^11.3.0",
     "nodemon": "^3.1.14",
     "supertest": "^7.2.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "overrides": {
+    "mongodb": "7.5.0"
   }
 }

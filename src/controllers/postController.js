@@ -31,7 +31,7 @@ const getPost = async(req,res,next) =>{
 const updatePost = async(req,res,next) =>{
     try {
         const post = await postService.updatePost(req.params.id, req.user._id, req.body );
-        req.status(200).json({ success:true, data:post})
+        res.status(200).json({ success:true, data:post})
     } catch (error) {
         next(error)
     }

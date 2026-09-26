@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "68d10a001234567890abcdef",
+    "title": "Getting Started with Node.js",
+    "content": "Node.js makes it possible to build fast and scalable backend applications using JavaScript.",
+    "author": "68d109001234567890abcdef",
+    "tags": [
+      "nodejs",
+      "backend",
+      "javascript"
+    ],
+    "state": "published",
+    "like_count": 3,
+    "comment_count": 2,
+    "published_at": "2026-09-20T10:00:00.000Z"
+  },
+  {
+    "_id": "68d10a101234567890abcdef",
+    "title": "Understanding MongoDB",
+    "content": "MongoDB is a NoSQL database that stores data in flexible JSON-like documents.",
+    "author": "68d109101234567890abcdef",
+    "tags": [
+      "mongodb",
+      "database",
+      "backend"
+    ],
+    "state": "published",
+    "like_count": 2,
+    "comment_count": 1,
+    "published_at": "2026-09-21T14:30:00.000Z"
+  },
+  {
+    "_id": "68d10a201234567890abcdef",
+    "title": "My Backend Development Journey",
+    "content": "Learning backend development has helped me understand APIs, databases, authentication, and server-side programming.",
+    "author": "68d109001234567890abcdef",
+    "tags": [
+      "backend",
+      "learning",
+      "programming"
+    ],
+    "state": "draft",
+    "like_count": 0,
+    "comment_count": 0,
+    "published_at": null
+  }
+]

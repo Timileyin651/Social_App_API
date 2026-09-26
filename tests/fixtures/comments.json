@@ -1,0 +1,29 @@
+[
+  {
+    "_id": "68d10b001234567890abcdef",
+    "post": "68d10a001234567890abcdef",
+    "user": "68d109101234567890abcdef",
+    "parent": null,
+    "content": "This is a very useful introduction to Node.js.",
+    "createdAt": "2026-09-20T11:00:00.000Z",
+    "updatedAt": "2026-09-20T11:00:00.000Z"
+  },
+  {
+    "_id": "68d10b101234567890abcdef",
+    "post": "68d10a001234567890abcdef",
+    "user": "68d109201234567890abcdef",
+    "parent": "68d10b001234567890abcdef",
+    "content": "I agree. The explanation of backend development is clear.",
+    "createdAt": "2026-09-20T12:00:00.000Z",
+    "updatedAt": "2026-09-20T12:00:00.000Z"
+  },
+  {
+    "_id": "68d10b201234567890abcdef",
+    "post": "68d10a101234567890abcdef",
+    "user": "68d109001234567890abcdef",
+    "parent": null,
+    "content": "MongoDB is really interesting because of its document-based structure.",
+    "createdAt": "2026-09-21T15:00:00.000Z",
+    "updatedAt": "2026-09-21T15:00:00.000Z"
+  }
+]

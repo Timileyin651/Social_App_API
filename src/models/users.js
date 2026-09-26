@@ -42,6 +42,7 @@ const userSchema = new mongoose.Schema({
 },{timestamps: true})
 
 userSchema.pre('save', async function () {
+    if (!this.isModified('password')) return next(); //this prevents the password from being hashed every single time other than when the password is being updated
     this.password =  await bcrypt.hash(this.password, 10)
 })
 

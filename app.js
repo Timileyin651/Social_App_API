@@ -10,6 +10,10 @@ require('dotenv').config()
 const app = express();
 const authRoute = require('./src/routes/authRoute');
 
+if(process.env.NODE_ENV !== 'test'){
+    db.connectToMongoDB();
+}
+
 
 
 //authentication middleware
@@ -21,7 +25,7 @@ const HOST = process.env.HOST || 'localhost'
 
 app.use(express.json());
 app.use(express.urlencoded({ extended:true}))
-db.connectToMongoDB();
+
 
 //routes
 app.use('/auth', authRoute)
@@ -31,9 +35,7 @@ app.use('/', postRoute); //refer to the route as not all are authenticated
 //global error middleware
 app.use(errorHandler)
 
-app.listen(PORT, ()=>{
-    console.log(`Server running on ${HOST}:${PORT}`);
-});
+
 
 module.exports = app;
 

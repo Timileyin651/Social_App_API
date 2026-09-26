@@ -33,7 +33,7 @@ async function likePost(postId, userId){;
 }
 
 async function unlikePost(postId,userId) {
-    const session = await monoose.startSession();
+    const session = await mongoose.startSession();
     try{
         let deleted;
         await session.withTransaction(async() => {
@@ -58,7 +58,7 @@ async function listLikesForPost(postId, { page = 1, limit = 20}) {
     const skip = (page -1) * limit;
     const [likes,total] = await Promise.all([
         Like.find({ post: postId})
-            .populate('user', 'username first)name last_name')
+            .populate('user', 'username first_name last_name')
             .skip(skip)
             .limit(limit),
         Like.countDocuments({ post: postId}),

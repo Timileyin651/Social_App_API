@@ -37,7 +37,7 @@ const postSchema =  new mongoose.Schema({
         type:Date,
         default: null,
     },
-},{timeseries: true})
+},{timestamps: true})
 
 postSchema.index({author: 1});
 postSchema.index({title: 1});

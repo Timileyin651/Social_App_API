@@ -1,23 +1,32 @@
-const validUsers = [
+[
   {
-    first_name: 'Ada',
-    last_name: 'Lovelace',
-    username: 'ada_lovelace',
-    email: 'ada@example.com',
-    password: 'Passw0rd!23',
+    "_id":"68d109001234567890abcdef",
+    "first_name": "Victor",
+    "last_name": "Otunuga",
+    "username": "santimi",
+    "email":"test@gmail.com",
+    "password": "123456",
+    "followers":[2],
+    "following":[3]
   },
   {
-    first_name: 'Grace',
-    last_name: 'Hopper',
-    username: 'grace_hopper',
-    email: 'grace@example.com',
-    password: 'Passw0rd!23',
+    "_id":"68d10a101234567890abcdef",
+    "first_name": "Oyindamola",
+    "last_name": "Obembe",
+    "username": "oyin",
+    "email":"test2@gmail.com",
+    "password": "123456",
+    "followers":[3],
+    "following":[1]
   },
-  {
-    first_name: 'Alan',
-    last_name: 'Turing',
-    username: 'alan_turing',
-    email: 'alan@example.com',
-    password: 'Passw0rd!23',
-  },
-];
+    {
+    "_id":"68d10a201234567890abcdef",
+    "first_name": "Inioluwa",
+    "last_name": "Omojuwa",
+    "username": "init",
+    "email":"test3@gmail.com",
+    "password": "123456",
+    "followers":[1],
+    "following":[2]
+  }
+]
