@@ -10,7 +10,6 @@ async function createPost(data){
 
 async function listPosts({ page =1, limit = 20, tag, viewerId}){
     const filter = { state: 'published'};
-
     if(viewerId){
         filter.$or = [{ state: 'published'}, { author: viewerId}];
         delete filter.state;
@@ -27,7 +26,6 @@ async function listPosts({ page =1, limit = 20, tag, viewerId}){
             .limit(limit),
         Post.countDocuments(filter),
     ]);
-
     return { posts, total, page: Number(page), limit: Number(limit)};
 }
 
