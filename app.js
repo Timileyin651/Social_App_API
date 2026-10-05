@@ -35,9 +35,12 @@ app.use('/', postRoute); //refer to the route as not all are authenticated
 //global error middleware
 app.use(errorHandler)
 
+app.listen(PORT,HOST,  ()=>
+    console.log(`server listening on http://${HOST}:${PORT}`)
+)
 
 
-module.exports = app;
+// module.exports = app;
 
 
 

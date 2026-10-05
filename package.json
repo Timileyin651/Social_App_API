@@ -18,7 +18,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "jest --detectOpenHandles"
+    "test": "jest --coverage"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
