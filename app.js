@@ -19,8 +19,8 @@ if(process.env.NODE_ENV !== 'test'){
 //authentication middleware
 require("./src/middleware/auth");
 
-const PORT = process.env.PORT || '0.0.0.0'
-const HOST = process.env.HOST || 'localhost'
+const PORT = process.env.PORT
+const HOST = process.env.HOST 
 
 
 app.use(express.json());
